@@ -41,7 +41,7 @@ VPNGATE_MIRROR = os.environ.get(
     "VPNGATE_MIRROR",
     "https://raw.githubusercontent.com/fdciabdul/Vpngate-Scraper-API/main/json/data.json",
 )
-WORKER_CHECK_URL = os.environ.get("CHECK_WORKER", "https://de.groka.cc.cd/check?sstp=vpn:vpn@")
+WORKER_CHECK_URL = os.environ.get("CHECK_WORKER", "https://你的域名/check?sstp=vpn:vpn@")
 CONCURRENCY = max(1, int(os.environ.get("CHECK_CONCURRENCY", "32")))
 CHECK_TIMEOUT = float(os.environ.get("CHECK_TIMEOUT", "90"))
 MAX_CHECK_NODES = int(os.environ.get("MAX_CHECK_NODES", "0"))
@@ -85,8 +85,9 @@ EDGE_HOSTS = [
     h.strip()
     for h in os.environ.get(
         "EDGE_HOSTS",
-       
-        "singapore.com:8443,www.dwk.com:8443,img.imgdd.com:8443,www.mc.js.cool:8443,kaspa.stream:8443,sourceforge.net:8443,unpkg.com:8443",
+        "singapore.com:8443,www.dwk.com:8443,img.imgdd.com:8443,www.mc.js.cool:8443,kaspa.stream:8443,sourceforge.net:8443,unpkg.com:8443"
+        "prizepicks.com:8443,time.is:8443,01-cctv.com:8443,www.visa.com.au:8443,saas.072159.xyz:8443,dexari.com:8443,"
+        "builtbybuffalo.com:8443,emos.best:8443,cloudflare-ip.mofashi.ltd:8443,lwww.dg22.top:8443,cf.777791.xyz:8443,www.oopt.eu.cc:8443",
     ).split(",")
     if h.strip()
 ]
